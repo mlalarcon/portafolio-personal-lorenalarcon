@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Inicio Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio-Lorena Alarcón</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/Icono.ico">
+
+
+</head>
+<!-- Fin head -->
+<!-- Inicio body -->
+
+<body>
+
+    <header>
+        <!-- inicio header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down" data-aos-duration="2100">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo-pf-8.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Habilidades">Habilidades <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Estudios">Estudios <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Experiencia">Experiencia <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Portafolio">Portafolio <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="carouselheader" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselheader" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselheader" data-slide-to="1"></li>
+                <li data-target="#carouselheader" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/atardecer.jpg" class="d-block w-100" alt="Atardecer">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>"Existe un deleite en el paisaje de cada dia"</h5>
+                        <p id="p-carrusel">- Douglas Pagels</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mesadetrabajo.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>"Juntarse es un comienzo. Seguir juntos es un progreso."</h5>
+                        <p id="p-carrusel">- Henry Ford</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cafecamera.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>"Para cada esfuerzo disciplinado hay una recompensa múltiple"</h5>
+                        <p id="p-carrusel">- Jim Rohn</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselheader" role="button" data-slide="prev" id="controless">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselheader" role="button" data-slide="next" id="controless">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- whatsapp volador -->
+
+    <div class="w-button">
+        <a href="https://wa.me/573124142482?text=Hola%20me%20gustaría%20saber%20mas%20sobre%20tu%20trabajo%20y%20quizá%20concretar%20algo."
+            target="_blank"><img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMzYzMjgxIDAtMjU2IDExNC42MzY3MTktMjU2IDI1NnMxMTQuNjM2NzE5IDI1NiAyNTYgMjU2IDI1Ni0xMTQuNjM2NzE5IDI1Ni0yNTYtMTE0LjYzNjcxOS0yNTYtMjU2LTI1NnptNS40MjU3ODEgNDA1LjA1MDc4MWMtLjAwMzkwNiAwIC4wMDM5MDcgMCAwIDBoLS4wNjI1Yy0yNS42NDQ1MzEtLjAxMTcxOS01MC44NDM3NS02LjQ0MTQwNi03My4yMjI2NTYtMTguNjQ0NTMxbC04MS4yMjI2NTYgMjEuMzAwNzgxIDIxLjczODI4MS03OS4zNzVjLTEzLjQxMDE1Ni0yMy4yMjY1NjItMjAuNDY0ODQ0LTQ5LjU3ODEyNS0yMC40NTMxMjUtNzYuNTc0MjE5LjAzNTE1Ni04NC40NTMxMjQgNjguNzY5NTMxLTE1My4xNjAxNTYgMTUzLjIyMjY1Ni0xNTMuMTYwMTU2IDQwLjk4NDM3NS4wMTU2MjUgNzkuNDU3MDMxIDE1Ljk2ODc1IDEwOC4zODI4MTMgNDQuOTE3OTY5IDI4LjkyOTY4NyAyOC45NTMxMjUgNDQuODUxNTYyIDY3LjQzNzUgNDQuODM1OTM3IDEwOC4zNjMyODEtLjAzNTE1NiA4NC40NTcwMzItNjguNzc3MzQzIDE1My4xNzE4NzUtMTUzLjIxODc1IDE1My4xNzE4NzV6bTAgMCIgZmlsbD0iI2EyODZhZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI2MS40NzY1NjIgMTI0LjQ2ODc1Yy03MC4yNDYwOTMgMC0xMjcuMzc1IDU3LjEwNTQ2OS0xMjcuNDA2MjUgMTI3LjMwMDc4MS0uMDA3ODEyIDI0LjA1NDY4OCA2LjcyNjU2MyA0Ny40ODA0NjkgMTkuNDcyNjU3IDY3Ljc1bDMuMDI3MzQzIDQuODE2NDA3LTEyLjg2NzE4NyA0Ni45ODA0NjggNDguMTk5MjE5LTEyLjY0MDYyNSA0LjY1MjM0NCAyLjc1NzgxM2MxOS41NTA3ODEgMTEuNjAxNTYyIDQxLjk2NDg0MyAxNy43MzgyODEgNjQuODE2NDA2IDE3Ljc0NjA5NGguMDUwNzgxYzcwLjE5MTQwNiAwIDEyNy4zMjAzMTMtNTcuMTA5Mzc2IDEyNy4zNTE1NjMtMTI3LjMwODU5NC4wMTE3MTgtMzQuMDE5NTMyLTEzLjIyMjY1Ny02Ni4wMDM5MDYtMzcuMjY1NjI2LTkwLjA2NjQwNi0yNC4wNDI5NjgtMjQuMDYyNS01Ni4wMTk1MzEtMzcuMzI0MjE5LTkwLjAzMTI1LTM3LjMzNTkzOHptNzQuOTA2MjUgMTgyLjAzNTE1NmMtMy4xOTE0MDYgOC45Mzc1LTE4LjQ4NDM3NCAxNy4wOTc2NTYtMjUuODM5ODQzIDE4LjE5OTIxOS02LjU5NzY1Ny45ODQzNzUtMTQuOTQxNDA3IDEuMzk0NTMxLTI0LjExMzI4MS0xLjUxNTYyNS01LjU2MjUtMS43NjU2MjUtMTIuNjkxNDA3LTQuMTIxMDk0LTIxLjgyODEyNi04LjA2MjUtMzguNDAyMzQzLTE2LjU3ODEyNS02My40ODQzNzQtNTUuMjM0Mzc1LTY1LjM5ODQzNy01Ny43ODkwNjItMS45MTQwNjMtMi41NTQ2ODgtMTUuNjMyODEzLTIwLjc1MzkwNy0xNS42MzI4MTMtMzkuNTkzNzUgMC0xOC44MzU5MzggOS44OTA2MjYtMjguMDk3NjU3IDEzLjM5ODQzOC0zMS45MjU3ODIgMy41MTE3MTktMy44MzIwMzEgNy42NjAxNTYtNC43ODkwNjIgMTAuMjEwOTM4LTQuNzg5MDYyIDIuNTUwNzgxIDAgNS4xMDU0NjguMDIzNDM3IDcuMzM1OTM3LjEzMjgxMiAyLjM1MTU2My4xMTcxODggNS41MDc4MTMtLjg5NDUzMSA4LjYxMzI4MSA2LjU3MDMxMyAzLjE5MTQwNiA3LjY2NDA2MiAxMC44NDc2NTYgMjYuNSAxMS44MDQ2ODggMjguNDE0MDYyLjk1NzAzMSAxLjkxNzk2OSAxLjU5Mzc1IDQuMTUyMzQ0LjMyMDMxMiA2LjcwNzAzMS0xLjI3NzM0NCAyLjU1NDY4OC01LjUxOTUzMSA4LjA2NjQwNy05LjU3MDMxMiAxMy4wODk4NDQtMS42OTkyMTkgMi4xMDU0NjktMy45MTQwNjMgMy45ODA0NjktMS42Nzk2ODggNy44MTI1IDIuMjMwNDY5IDMuODI4MTI1IDkuOTE3OTY5IDE2LjM2MzI4MiAyMS4yOTY4NzUgMjYuNTExNzE5IDE0LjYyNSAxMy4wMzkwNjMgMjYuOTYwOTM4IDE3LjA3ODEyNSAzMC43ODkwNjMgMTguOTk2MDk0IDMuODI0MjE4IDEuOTE0MDYyIDYuMDU4NTk0IDEuNTkzNzUgOC4yOTI5NjgtLjk1NzAzMSAyLjIzMDQ2OS0yLjU1NDY4OCA5LjU3MDMxMy0xMS4xNzU3ODIgMTIuMTIxMDk0LTE1LjAwNzgxMyAyLjU1MDc4Mi0zLjgzMjAzMSA1LjEwNTQ2OS0zLjE5MTQwNiA4LjYxMzI4Mi0xLjkxNDA2MyAzLjUxMTcxOCAxLjI3MzQzOCAyMi4zMzIwMzEgMTAuNTM1MTU3IDI2LjE2MDE1NiAxMi40NDkyMTkgMy44MjgxMjUgMS45MTc5NjkgNi4zNzg5MDYgMi44NzUgNy4zMzU5MzcgNC40NzI2NTcuOTYwOTM4IDEuNTk3NjU2Ljk2MDkzOCA5LjI1NzgxMi0yLjIzMDQ2OSAxOC4xOTkyMTh6bTAgMCIgZmlsbD0iI2EyODZhZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4="
+                id="volador" /></a>
+    </div>
+
+    <!-- fin header -->
+    <div class="container">
+        <!-- Inicio soy yo -->
+        <section id="Soyyo">
+            <div class="container">
+                <h3><b>Maria Lorena Alarcón Contreras</b></h3>
+                <div class="card mb-3" style="max-width: 1280px;" id="cardsoy">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="img/soyyo.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 id="contactame"><b><br>¿Quien soy?</b></h5></a>
+                                <p class="card-text"><br> Soy productora multimedia, Quienes me conocen, me describen
+                                    como una persona responsable, creativa, adaptable, y colaborativa. Personalmente,
+                                    considero que soy una persona trabajadora, paciente, metódica, honesta y analítica.</p>
+                                <a href="#footer" p class="card-text" id="contactame">
+                                    <h5><b><br>Contactame</b></h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Fin soy yo -->
+
+        <!-- Inicio Habilidades -->
+        <section id="Habilidades">
+            <div class="container">
+                <h3><b>Habilidades</b></h3>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra1"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <b>Photoshop
+                            60%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra2"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><b>Illustrator
+                            75%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra3"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><b>Lightroom 85%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra4"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"><b>Audacity 90%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra5"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><b>Fotografía
+                            75%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra6"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><b>Diseño web
+                            55%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra7"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><b>Mercadeo 55%</b>
+                    </div>
+                </div>
+                <div class="progress" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="barra8"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><b>Diseño
+                            gráfico 70%</b></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Fin habilidades -->
+
+        <!-- Inicio Estudios -->
+        <section id="Estudios">
+            <h3><b>Estudios</b></h3>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card" id="card-estudio">
+                        <img src="img/primaria.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title" id="estudiostxt">Primaria</h5>
+                                <a href="pdf/primaria.pdf" target="_blank">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xMiAxNmMtLjIwNSAwLS40MDEtLjA4NC0uNTQyLS4yMzJsLTUuMjUtNS41Yy0uNDU1LS40NzYtLjExNy0xLjI2OC41NDItMS4yNjhoMi43NXYtNS43NWMwLS42ODkuNTYxLTEuMjUgMS4yNS0xLjI1aDIuNWMuNjg5IDAgMS4yNS41NjEgMS4yNSAxLjI1djUuNzVoMi43NWMuNjU5IDAgLjk5Ny43OTIuNTQyIDEuMjY4bC01LjI1IDUuNWMtLjE0MS4xNDgtLjMzNy4yMzItLjU0Mi4yMzJ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjIuMjUgMjJoLTIwLjVjLS45NjUgMC0xLjc1LS43ODUtMS43NS0xLjc1di0uNWMwLS45NjUuNzg1LTEuNzUgMS43NS0xLjc1aDIwLjVjLjk2NSAwIDEuNzUuNzg1IDEuNzUgMS43NXYuNWMwIC45NjUtLjc4NSAxLjc1LTEuNzUgMS43NXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
+                                        id="descarga">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2MS4zMTIgNDYxLjMxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMjMwLjY1NiwxNTYuNDE2Yy00MC45NiwwLTc0LjI0LDMzLjI4LTc0LjI0LDc0LjI0czMzLjI4LDc0LjI0LDc0LjI0LDc0LjI0czc0LjI0LTMzLjI4LDc0LjI0LTc0LjI0ICAgIFMyNzEuNjE2LDE1Ni40MTYsMjMwLjY1NiwxNTYuNDE2eiBNMjI1LjAyNCwyMDguNjRjLTkuMjE2LDAtMTYuODk2LDcuNjgtMTYuODk2LDE2Ljg5NmgtMjQuNTc2ICAgIGMwLjUxMi0yMy4wNCwxOC45NDQtNDEuNDcyLDQxLjQ3Mi00MS40NzJWMjA4LjY0eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDU1LjkzNiwyMTUuMjk2Yy0yNS4wODgtMzEuMjMyLTExNC42ODgtMTMzLjEyLTIyNS4yOC0xMzMuMTJTMzAuNDY0LDE4NC4wNjQsNS4zNzYsMjE1LjI5NiAgICBjLTcuMTY4LDguNzA0LTcuMTY4LDIxLjUwNCwwLDMwLjcyYzI1LjA4OCwzMS4yMzIsMTE0LjY4OCwxMzMuMTIsMjI1LjI4LDEzMy4xMnMyMDAuMTkyLTEwMS44ODgsMjI1LjI4LTEzMy4xMiAgICBDNDYzLjEwNCwyMzcuMzEyLDQ2My4xMDQsMjI0LjUxMiw0NTUuOTM2LDIxNS4yOTZ6IE0yMzAuNjU2LDMzOC4xNzZjLTU5LjM5MiwwLTEwNy41Mi00OC4xMjgtMTA3LjUyLTEwNy41MiAgICBzNDguMTI4LTEwNy41MiwxMDcuNTItMTA3LjUyczEwNy41Miw0OC4xMjgsMTA3LjUyLDEwNy41MlMyOTAuMDQ4LDMzOC4xNzYsMjMwLjY1NiwzMzguMTc2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="
+                                        id="descarga" />
+                                </a>
+                            </center>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" id="card-estudio">
+                        <img src="img/bachiller.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title" id="estudiostxt">Bachiller</h5>
+                                <a href="pdf/Feb. 17, Doc. 1.pdf" target="_blank">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xMiAxNmMtLjIwNSAwLS40MDEtLjA4NC0uNTQyLS4yMzJsLTUuMjUtNS41Yy0uNDU1LS40NzYtLjExNy0xLjI2OC41NDItMS4yNjhoMi43NXYtNS43NWMwLS42ODkuNTYxLTEuMjUgMS4yNS0xLjI1aDIuNWMuNjg5IDAgMS4yNS41NjEgMS4yNSAxLjI1djUuNzVoMi43NWMuNjU5IDAgLjk5Ny43OTIuNTQyIDEuMjY4bC01LjI1IDUuNWMtLjE0MS4xNDgtLjMzNy4yMzItLjU0Mi4yMzJ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjIuMjUgMjJoLTIwLjVjLS45NjUgMC0xLjc1LS43ODUtMS43NS0xLjc1di0uNWMwLS45NjUuNzg1LTEuNzUgMS43NS0xLjc1aDIwLjVjLjk2NSAwIDEuNzUuNzg1IDEuNzUgMS43NXYuNWMwIC45NjUtLjc4NSAxLjc1LTEuNzUgMS43NXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
+                                        id="descarga">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2MS4zMTIgNDYxLjMxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMjMwLjY1NiwxNTYuNDE2Yy00MC45NiwwLTc0LjI0LDMzLjI4LTc0LjI0LDc0LjI0czMzLjI4LDc0LjI0LDc0LjI0LDc0LjI0czc0LjI0LTMzLjI4LDc0LjI0LTc0LjI0ICAgIFMyNzEuNjE2LDE1Ni40MTYsMjMwLjY1NiwxNTYuNDE2eiBNMjI1LjAyNCwyMDguNjRjLTkuMjE2LDAtMTYuODk2LDcuNjgtMTYuODk2LDE2Ljg5NmgtMjQuNTc2ICAgIGMwLjUxMi0yMy4wNCwxOC45NDQtNDEuNDcyLDQxLjQ3Mi00MS40NzJWMjA4LjY0eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDU1LjkzNiwyMTUuMjk2Yy0yNS4wODgtMzEuMjMyLTExNC42ODgtMTMzLjEyLTIyNS4yOC0xMzMuMTJTMzAuNDY0LDE4NC4wNjQsNS4zNzYsMjE1LjI5NiAgICBjLTcuMTY4LDguNzA0LTcuMTY4LDIxLjUwNCwwLDMwLjcyYzI1LjA4OCwzMS4yMzIsMTE0LjY4OCwxMzMuMTIsMjI1LjI4LDEzMy4xMnMyMDAuMTkyLTEwMS44ODgsMjI1LjI4LTEzMy4xMiAgICBDNDYzLjEwNCwyMzcuMzEyLDQ2My4xMDQsMjI0LjUxMiw0NTUuOTM2LDIxNS4yOTZ6IE0yMzAuNjU2LDMzOC4xNzZjLTU5LjM5MiwwLTEwNy41Mi00OC4xMjgtMTA3LjUyLTEwNy41MiAgICBzNDguMTI4LTEwNy41MiwxMDcuNTItMTA3LjUyczEwNy41Miw0OC4xMjgsMTA3LjUyLDEwNy41MlMyOTAuMDQ4LDMzOC4xNzYsMjMwLjY1NiwzMzguMTc2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="
+                                        id="descarga" />
+                                </a>
+                            </center>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" id="card-estudio">
+                        <img src="img/Tecnico.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title" id="estudiostxt">Técnico</h5>
+                                <a href="pdf/9513001618112TI1003879983C.pdf" target="_blank">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xMiAxNmMtLjIwNSAwLS40MDEtLjA4NC0uNTQyLS4yMzJsLTUuMjUtNS41Yy0uNDU1LS40NzYtLjExNy0xLjI2OC41NDItMS4yNjhoMi43NXYtNS43NWMwLS42ODkuNTYxLTEuMjUgMS4yNS0xLjI1aDIuNWMuNjg5IDAgMS4yNS41NjEgMS4yNSAxLjI1djUuNzVoMi43NWMuNjU5IDAgLjk5Ny43OTIuNTQyIDEuMjY4bC01LjI1IDUuNWMtLjE0MS4xNDgtLjMzNy4yMzItLjU0Mi4yMzJ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjIuMjUgMjJoLTIwLjVjLS45NjUgMC0xLjc1LS43ODUtMS43NS0xLjc1di0uNWMwLS45NjUuNzg1LTEuNzUgMS43NS0xLjc1aDIwLjVjLjk2NSAwIDEuNzUuNzg1IDEuNzUgMS43NXYuNWMwIC45NjUtLjc4NSAxLjc1LTEuNzUgMS43NXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
+                                        id="descarga">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2MS4zMTIgNDYxLjMxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMjMwLjY1NiwxNTYuNDE2Yy00MC45NiwwLTc0LjI0LDMzLjI4LTc0LjI0LDc0LjI0czMzLjI4LDc0LjI0LDc0LjI0LDc0LjI0czc0LjI0LTMzLjI4LDc0LjI0LTc0LjI0ICAgIFMyNzEuNjE2LDE1Ni40MTYsMjMwLjY1NiwxNTYuNDE2eiBNMjI1LjAyNCwyMDguNjRjLTkuMjE2LDAtMTYuODk2LDcuNjgtMTYuODk2LDE2Ljg5NmgtMjQuNTc2ICAgIGMwLjUxMi0yMy4wNCwxOC45NDQtNDEuNDcyLDQxLjQ3Mi00MS40NzJWMjA4LjY0eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDU1LjkzNiwyMTUuMjk2Yy0yNS4wODgtMzEuMjMyLTExNC42ODgtMTMzLjEyLTIyNS4yOC0xMzMuMTJTMzAuNDY0LDE4NC4wNjQsNS4zNzYsMjE1LjI5NiAgICBjLTcuMTY4LDguNzA0LTcuMTY4LDIxLjUwNCwwLDMwLjcyYzI1LjA4OCwzMS4yMzIsMTE0LjY4OCwxMzMuMTIsMjI1LjI4LDEzMy4xMnMyMDAuMTkyLTEwMS44ODgsMjI1LjI4LTEzMy4xMiAgICBDNDYzLjEwNCwyMzcuMzEyLDQ2My4xMDQsMjI0LjUxMiw0NTUuOTM2LDIxNS4yOTZ6IE0yMzAuNjU2LDMzOC4xNzZjLTU5LjM5MiwwLTEwNy41Mi00OC4xMjgtMTA3LjUyLTEwNy41MiAgICBzNDguMTI4LTEwNy41MiwxMDcuNTItMTA3LjUyczEwNy41Miw0OC4xMjgsMTA3LjUyLDEwNy41MlMyOTAuMDQ4LDMzOC4xNzYsMjMwLjY1NiwzMzguMTc2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="
+                                        id="descarga" />
+                                </a>
+                            </center>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" id="card-estudio">
+                        <img src="img/tecnologo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title" id="estudiostxt">Tecnólogo</h5>
+                                <a href="pdf/certificado (1).pdf" target="_blank">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xMiAxNmMtLjIwNSAwLS40MDEtLjA4NC0uNTQyLS4yMzJsLTUuMjUtNS41Yy0uNDU1LS40NzYtLjExNy0xLjI2OC41NDItMS4yNjhoMi43NXYtNS43NWMwLS42ODkuNTYxLTEuMjUgMS4yNS0xLjI1aDIuNWMuNjg5IDAgMS4yNS41NjEgMS4yNSAxLjI1djUuNzVoMi43NWMuNjU5IDAgLjk5Ny43OTIuNTQyIDEuMjY4bC01LjI1IDUuNWMtLjE0MS4xNDgtLjMzNy4yMzItLjU0Mi4yMzJ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjIuMjUgMjJoLTIwLjVjLS45NjUgMC0xLjc1LS43ODUtMS43NS0xLjc1di0uNWMwLS45NjUuNzg1LTEuNzUgMS43NS0xLjc1aDIwLjVjLjk2NSAwIDEuNzUuNzg1IDEuNzUgMS43NXYuNWMwIC45NjUtLjc4NSAxLjc1LTEuNzUgMS43NXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
+                                        id="descarga">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2MS4zMTIgNDYxLjMxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMjMwLjY1NiwxNTYuNDE2Yy00MC45NiwwLTc0LjI0LDMzLjI4LTc0LjI0LDc0LjI0czMzLjI4LDc0LjI0LDc0LjI0LDc0LjI0czc0LjI0LTMzLjI4LDc0LjI0LTc0LjI0ICAgIFMyNzEuNjE2LDE1Ni40MTYsMjMwLjY1NiwxNTYuNDE2eiBNMjI1LjAyNCwyMDguNjRjLTkuMjE2LDAtMTYuODk2LDcuNjgtMTYuODk2LDE2Ljg5NmgtMjQuNTc2ICAgIGMwLjUxMi0yMy4wNCwxOC45NDQtNDEuNDcyLDQxLjQ3Mi00MS40NzJWMjA4LjY0eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDU1LjkzNiwyMTUuMjk2Yy0yNS4wODgtMzEuMjMyLTExNC42ODgtMTMzLjEyLTIyNS4yOC0xMzMuMTJTMzAuNDY0LDE4NC4wNjQsNS4zNzYsMjE1LjI5NiAgICBjLTcuMTY4LDguNzA0LTcuMTY4LDIxLjUwNCwwLDMwLjcyYzI1LjA4OCwzMS4yMzIsMTE0LjY4OCwxMzMuMTIsMjI1LjI4LDEzMy4xMnMyMDAuMTkyLTEwMS44ODgsMjI1LjI4LTEzMy4xMiAgICBDNDYzLjEwNCwyMzcuMzEyLDQ2My4xMDQsMjI0LjUxMiw0NTUuOTM2LDIxNS4yOTZ6IE0yMzAuNjU2LDMzOC4xNzZjLTU5LjM5MiwwLTEwNy41Mi00OC4xMjgtMTA3LjUyLTEwNy41MiAgICBzNDguMTI4LTEwNy41MiwxMDcuNTItMTA3LjUyczEwNy41Miw0OC4xMjgsMTA3LjUyLDEwNy41MlMyOTAuMDQ4LDMzOC4xNzYsMjMwLjY1NiwzMzguMTc2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="
+                                        id="descarga" />
+                                </a>
+                            </center>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin estudios -->
+
+        <!-- Inicio Experiencia -->
+        <section id="Experiencia">
+            <h3><b>Experiencia</b></h3>
+            <div class="card-mb-3" style="max-width: 1280px;" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 id="contactame"><b>Independiente</b></h5></a>
+                            <p class="card-text"> Trabajo independientemente como productora multimedia <br>Tiempo: 14
+                                meses</p>
+                            <center><img src="img/Independiente.png" alt="Independiente"></center>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <a href="https://www.instagram.com/eternalsunshinest/" target="-blank">
+                                <h5 id="contactame"><b>Eternal Sunshine</b></h5>
+                            </a>
+                            <p class="card-text">Es una microempresa recidente de la ciudad de Valledupar. <br>Trabajos
+                                realizados: Manejo de redes, Reconstrucción de imagen corporativa.<br> Propietaria:
+                                Ginet
+                                Alexandra Lopez.<br>Teléfono: 3219410121.<br>Tiempo: 3 meses</p>
+                            <center><a href="https://www.instagram.com/eternalsunshinest/" target="-blank">
+                                    <h5 id="contactame"></h5><img src="img/ETERNAL-8.png" alt="Eternal Sunshine">
+                                </a></center>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin experiencia -->
+
+        <!-- Inicio Portafolio -->
+        <section id="Portafolio">
+            <h3><b>Portafolio</b></h3>
+            <center>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-aos="flip-up" data-aos-duration="2500">
+                    Visualizar portafolio
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" data-aos="flip-down" data-aos-duration="2500">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Portafolio</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="imgporta/pintura-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/fotog-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/edna-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/foto2-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/logomentes-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/tarjetas-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/redes-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/piazzeta-8.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imgporta/piazzeta 1-8.png" class="d-block w-100" alt="...">
+                                        </div>
+
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#"><img src="img/logo-pf-8.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+
+        </section>
+        <!-- Fin portafolio -->
+    </div>
+    <footer id="footer" data-aos="fade-up" data-aos-duration="2000">
+
+        <center>
+            <img src="img/logo-pf-8.png" alt="logo"> <br><br>
+            <a href="https://instagram.com/lorenn.ac?igshid=1ca6chkgft1wi" target="_blank"><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTMwNSAyNTZjMCAyNy4wNjI1LTIxLjkzNzUgNDktNDkgNDlzLTQ5LTIxLjkzNzUtNDktNDkgMjEuOTM3NS00OSA0OS00OSA0OSAyMS45Mzc1IDQ5IDQ5em0wIDAiIGZpbGw9IiNhMjg2YWYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNzAuNTkzNzUgMTY5LjMwNDY4OGMtMi4zNTU0NjktNi4zODI4MTMtNi4xMTMyODEtMTIuMTYwMTU3LTEwLjk5NjA5NC0xNi45MDIzNDQtNC43NDIxODctNC44ODI4MTMtMTAuNTE1NjI1LTguNjQwNjI1LTE2LjkwMjM0NC0xMC45OTYwOTQtNS4xNzk2ODctMi4wMTE3MTktMTIuOTYwOTM3LTQuNDA2MjUtMjcuMjkyOTY4LTUuMDU4NTk0LTE1LjUwMzkwNi0uNzA3MDMxLTIwLjE1MjM0NC0uODU5Mzc1LTU5LjQwMjM0NC0uODU5Mzc1LTM5LjI1MzkwNiAwLTQzLjkwMjM0NC4xNDg0MzgtNTkuNDAyMzQ0Ljg1NTQ2OS0xNC4zMzIwMzEuNjU2MjUtMjIuMTE3MTg3IDMuMDUwNzgxLTI3LjI5Mjk2OCA1LjA2MjUtNi4zODY3MTkgMi4zNTU0NjktMTIuMTY0MDYzIDYuMTEzMjgxLTE2LjkwMjM0NCAxMC45OTYwOTQtNC44ODI4MTMgNC43NDIxODctOC42NDA2MjUgMTAuNTE1NjI1LTExIDE2LjkwMjM0NC0yLjAxMTcxOSA1LjE3OTY4Ny00LjQwNjI1IDEyLjk2NDg0My01LjA1ODU5NCAyNy4yOTY4NzQtLjcwNzAzMSAxNS41LS44NTkzNzUgMjAuMTQ4NDM4LS44NTkzNzUgNTkuNDAyMzQ0IDAgMzkuMjUuMTUyMzQ0IDQzLjg5ODQzOC44NTkzNzUgNTkuNDAyMzQ0LjY1MjM0NCAxNC4zMzIwMzEgMy4wNDY4NzUgMjIuMTEzMjgxIDUuMDU4NTk0IDI3LjI5Mjk2OSAyLjM1OTM3NSA2LjM4NjcxOSA2LjExMzI4MSAxMi4xNjAxNTYgMTAuOTk2MDk0IDE2LjkwMjM0MyA0Ljc0MjE4NyA0Ljg4MjgxMyAxMC41MTU2MjQgOC42NDA2MjYgMTYuOTAyMzQzIDEwLjk5NjA5NCA1LjE3OTY4OCAyLjAxNTYyNSAxMi45NjQ4NDQgNC40MTAxNTYgMjcuMjk2ODc1IDUuMDYyNSAxNS41LjcwNzAzMiAyMC4xNDQ1MzIuODU1NDY5IDU5LjM5ODQzOC44NTU0NjkgMzkuMjU3ODEyIDAgNDMuOTA2MjUtLjE0ODQzNyA1OS40MDIzNDQtLjg1NTQ2OSAxNC4zMzIwMzEtLjY1MjM0NCAyMi4xMTcxODctMy4wNDY4NzUgMjcuMjk2ODc0LTUuMDYyNSAxMi44MjAzMTMtNC45NDUzMTIgMjIuOTUzMTI2LTE1LjA3ODEyNSAyNy44OTg0MzgtMjcuODk4NDM3IDIuMDExNzE5LTUuMTc5Njg4IDQuNDA2MjUtMTIuOTYwOTM4IDUuMDYyNS0yNy4yOTI5NjkuNzA3MDMxLTE1LjUwMzkwNi44NTU0NjktMjAuMTUyMzQ0Ljg1NTQ2OS01OS40MDIzNDQgMC0zOS4yNTM5MDYtLjE0ODQzOC00My45MDIzNDQtLjg1NTQ2OS01OS40MDIzNDQtLjY1MjM0NC0xNC4zMzIwMzEtMy4wNDY4NzUtMjIuMTE3MTg3LTUuMDYyNS0yNy4yOTY4NzR6bS0xMTQuNTkzNzUgMTYyLjE3OTY4N2MtNDEuNjkxNDA2IDAtNzUuNDg4MjgxLTMzLjc5Mjk2OS03NS40ODgyODEtNzUuNDg0Mzc1czMzLjc5Njg3NS03NS40ODQzNzUgNzUuNDg4MjgxLTc1LjQ4NDM3NWM0MS42ODc1IDAgNzUuNDg0Mzc1IDMzLjc5Mjk2OSA3NS40ODQzNzUgNzUuNDg0Mzc1cy0zMy43OTY4NzUgNzUuNDg0Mzc1LTc1LjQ4NDM3NSA3NS40ODQzNzV6bTc4LjQ2ODc1LTEzNi4zMTI1Yy05Ljc0MjE4OCAwLTE3LjY0MDYyNS03Ljg5ODQzNy0xNy42NDA2MjUtMTcuNjQwNjI1czcuODk4NDM3LTE3LjY0MDYyNSAxNy42NDA2MjUtMTcuNjQwNjI1IDE3LjY0MDYyNSA3Ljg5ODQzNyAxNy42NDA2MjUgMTcuNjQwNjI1Yy0uMDAzOTA2IDkuNzQyMTg4LTcuODk4NDM3IDE3LjY0MDYyNS0xNy42NDA2MjUgMTcuNjQwNjI1em0wIDAiIGZpbGw9IiNhMjg2YWYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0yNTYgMGMtMTQxLjM2MzI4MSAwLTI1NiAxMTQuNjM2NzE5LTI1NiAyNTZzMTE0LjYzNjcxOSAyNTYgMjU2IDI1NiAyNTYtMTE0LjYzNjcxOSAyNTYtMjU2LTExNC42MzY3MTktMjU2LTI1Ni0yNTZ6bTE0Ni4xMTMyODEgMzE2LjYwNTQ2OWMtLjcxMDkzNyAxNS42NDg0MzctMy4xOTkyMTkgMjYuMzMyMDMxLTYuODMyMDMxIDM1LjY4MzU5My03LjYzNjcxOSAxOS43NDYwOTQtMjMuMjQ2MDk0IDM1LjM1NTQ2OS00Mi45OTIxODggNDIuOTkyMTg4LTkuMzQ3NjU2IDMuNjMyODEyLTIwLjAzNTE1NiA2LjExNzE4OC0zNS42Nzk2ODcgNi44MzIwMzEtMTUuNjc1NzgxLjcxNDg0NC0yMC42ODM1OTQuODg2NzE5LTYwLjYwNTQ2OS44ODY3MTktMzkuOTI1NzgxIDAtNDQuOTI5Njg3LS4xNzE4NzUtNjAuNjA5Mzc1LS44ODY3MTktMTUuNjQ0NTMxLS43MTQ4NDMtMjYuMzMyMDMxLTMuMTk5MjE5LTM1LjY3OTY4Ny02LjgzMjAzMS05LjgxMjUtMy42OTE0MDYtMTguNjk1MzEzLTkuNDc2NTYyLTI2LjAzOTA2My0xNi45NTcwMzEtNy40NzY1NjItNy4zMzk4NDQtMTMuMjYxNzE5LTE2LjIyNjU2My0xNi45NTMxMjUtMjYuMDM1MTU3LTMuNjMyODEyLTkuMzQ3NjU2LTYuMTIxMDk0LTIwLjAzNTE1Ni02LjgzMjAzMS0zNS42Nzk2ODctLjcyMjY1Ni0xNS42Nzk2ODctLjg5MDYyNS0yMC42ODc1LS44OTA2MjUtNjAuNjA5Mzc1cy4xNjc5NjktNDQuOTI5Njg4Ljg4NjcxOS02MC42MDU0NjljLjcxMDkzNy0xNS42NDg0MzcgMy4xOTUzMTItMjYuMzMyMDMxIDYuODI4MTI1LTM1LjY4MzU5MyAzLjY5MTQwNi05LjgwODU5NCA5LjQ4MDQ2OC0xOC42OTUzMTMgMTYuOTYwOTM3LTI2LjAzNTE1NyA3LjMzOTg0NC03LjQ4MDQ2OSAxNi4yMjY1NjMtMTMuMjY1NjI1IDI2LjAzNTE1Ny0xNi45NTcwMzEgOS4zNTE1NjItMy42MzI4MTIgMjAuMDM1MTU2LTYuMTE3MTg4IDM1LjY4MzU5My02LjgzMjAzMSAxNS42NzU3ODEtLjcxNDg0NCAyMC42ODM1OTQtLjg4NjcxOSA2MC42MDU0NjktLjg4NjcxOXM0NC45Mjk2ODguMTcxODc1IDYwLjYwNTQ2OS44OTA2MjVjMTUuNjQ4NDM3LjcxMDkzNyAyNi4zMzIwMzEgMy4xOTUzMTMgMzUuNjgzNTkzIDYuODI0MjE5IDkuODA4NTk0IDMuNjkxNDA2IDE4LjY5NTMxMyA5LjQ4MDQ2OCAyNi4wMzkwNjMgMTYuOTYwOTM3IDcuNDc2NTYzIDcuMzQzNzUgMTMuMjY1NjI1IDE2LjIyNjU2MyAxNi45NTMxMjUgMjYuMDM1MTU3IDMuNjM2NzE5IDkuMzUxNTYyIDYuMTIxMDk0IDIwLjAzNTE1NiA2LjgzNTkzOCAzNS42ODM1OTMuNzE0ODQzIDE1LjY3NTc4MS44ODI4MTIgMjAuNjgzNTk0Ljg4MjgxMiA2MC42MDU0NjlzLS4xNjc5NjkgNDQuOTI5Njg4LS44ODY3MTkgNjAuNjA1NDY5em0wIDAiIGZpbGw9IiNhMjg2YWYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD48L2c+PC9zdmc+" /></a>
+            <a href="https://www.facebook.com/lorena.alarcon.5832" target="_blank"><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUxMiAyNTZjMC0xNDEuNC0xMTQuNi0yNTYtMjU2LTI1NnMtMjU2IDExNC42LTI1NiAyNTYgMTE0LjYgMjU2IDI1NiAyNTZjMS41IDAgMyAwIDQuNS0uMXYtMTk5LjJoLTU1di02NC4xaDU1di00Ny4yYzAtNTQuNyAzMy40LTg0LjUgODIuMi04NC41IDIzLjQgMCA0My41IDEuNyA0OS4zIDIuNXY1Ny4yaC0zMy42Yy0yNi41IDAtMzEuNyAxMi42LTMxLjcgMzEuMXY0MC44aDYzLjVsLTguMyA2NC4xaC01NS4ydjE4OS41YzEwNy0zMC43IDE4NS4zLTEyOS4yIDE4NS4zLTI0Ni4xeiIgZmlsbD0iI2EyODZhZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" /></a>
+            <a href="https://wa.me/573124142482?text=Hola%20me%20gustaría%20saber%20mas%20sobre%20tu%20trabajo%20y%20quizá%20concretar%20algo."
+                target="_blank"><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMzYzMjgxIDAtMjU2IDExNC42MzY3MTktMjU2IDI1NnMxMTQuNjM2NzE5IDI1NiAyNTYgMjU2IDI1Ni0xMTQuNjM2NzE5IDI1Ni0yNTYtMTE0LjYzNjcxOS0yNTYtMjU2LTI1NnptNS40MjU3ODEgNDA1LjA1MDc4MWMtLjAwMzkwNiAwIC4wMDM5MDcgMCAwIDBoLS4wNjI1Yy0yNS42NDQ1MzEtLjAxMTcxOS01MC44NDM3NS02LjQ0MTQwNi03My4yMjI2NTYtMTguNjQ0NTMxbC04MS4yMjI2NTYgMjEuMzAwNzgxIDIxLjczODI4MS03OS4zNzVjLTEzLjQxMDE1Ni0yMy4yMjY1NjItMjAuNDY0ODQ0LTQ5LjU3ODEyNS0yMC40NTMxMjUtNzYuNTc0MjE5LjAzNTE1Ni04NC40NTMxMjQgNjguNzY5NTMxLTE1My4xNjAxNTYgMTUzLjIyMjY1Ni0xNTMuMTYwMTU2IDQwLjk4NDM3NS4wMTU2MjUgNzkuNDU3MDMxIDE1Ljk2ODc1IDEwOC4zODI4MTMgNDQuOTE3OTY5IDI4LjkyOTY4NyAyOC45NTMxMjUgNDQuODUxNTYyIDY3LjQzNzUgNDQuODM1OTM3IDEwOC4zNjMyODEtLjAzNTE1NiA4NC40NTcwMzItNjguNzc3MzQzIDE1My4xNzE4NzUtMTUzLjIxODc1IDE1My4xNzE4NzV6bTAgMCIgZmlsbD0iI2EyODZhZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI2MS40NzY1NjIgMTI0LjQ2ODc1Yy03MC4yNDYwOTMgMC0xMjcuMzc1IDU3LjEwNTQ2OS0xMjcuNDA2MjUgMTI3LjMwMDc4MS0uMDA3ODEyIDI0LjA1NDY4OCA2LjcyNjU2MyA0Ny40ODA0NjkgMTkuNDcyNjU3IDY3Ljc1bDMuMDI3MzQzIDQuODE2NDA3LTEyLjg2NzE4NyA0Ni45ODA0NjggNDguMTk5MjE5LTEyLjY0MDYyNSA0LjY1MjM0NCAyLjc1NzgxM2MxOS41NTA3ODEgMTEuNjAxNTYyIDQxLjk2NDg0MyAxNy43MzgyODEgNjQuODE2NDA2IDE3Ljc0NjA5NGguMDUwNzgxYzcwLjE5MTQwNiAwIDEyNy4zMjAzMTMtNTcuMTA5Mzc2IDEyNy4zNTE1NjMtMTI3LjMwODU5NC4wMTE3MTgtMzQuMDE5NTMyLTEzLjIyMjY1Ny02Ni4wMDM5MDYtMzcuMjY1NjI2LTkwLjA2NjQwNi0yNC4wNDI5NjgtMjQuMDYyNS01Ni4wMTk1MzEtMzcuMzI0MjE5LTkwLjAzMTI1LTM3LjMzNTkzOHptNzQuOTA2MjUgMTgyLjAzNTE1NmMtMy4xOTE0MDYgOC45Mzc1LTE4LjQ4NDM3NCAxNy4wOTc2NTYtMjUuODM5ODQzIDE4LjE5OTIxOS02LjU5NzY1Ny45ODQzNzUtMTQuOTQxNDA3IDEuMzk0NTMxLTI0LjExMzI4MS0xLjUxNTYyNS01LjU2MjUtMS43NjU2MjUtMTIuNjkxNDA3LTQuMTIxMDk0LTIxLjgyODEyNi04LjA2MjUtMzguNDAyMzQzLTE2LjU3ODEyNS02My40ODQzNzQtNTUuMjM0Mzc1LTY1LjM5ODQzNy01Ny43ODkwNjItMS45MTQwNjMtMi41NTQ2ODgtMTUuNjMyODEzLTIwLjc1MzkwNy0xNS42MzI4MTMtMzkuNTkzNzUgMC0xOC44MzU5MzggOS44OTA2MjYtMjguMDk3NjU3IDEzLjM5ODQzOC0zMS45MjU3ODIgMy41MTE3MTktMy44MzIwMzEgNy42NjAxNTYtNC43ODkwNjIgMTAuMjEwOTM4LTQuNzg5MDYyIDIuNTUwNzgxIDAgNS4xMDU0NjguMDIzNDM3IDcuMzM1OTM3LjEzMjgxMiAyLjM1MTU2My4xMTcxODggNS41MDc4MTMtLjg5NDUzMSA4LjYxMzI4MSA2LjU3MDMxMyAzLjE5MTQwNiA3LjY2NDA2MiAxMC44NDc2NTYgMjYuNSAxMS44MDQ2ODggMjguNDE0MDYyLjk1NzAzMSAxLjkxNzk2OSAxLjU5Mzc1IDQuMTUyMzQ0LjMyMDMxMiA2LjcwNzAzMS0xLjI3NzM0NCAyLjU1NDY4OC01LjUxOTUzMSA4LjA2NjQwNy05LjU3MDMxMiAxMy4wODk4NDQtMS42OTkyMTkgMi4xMDU0NjktMy45MTQwNjMgMy45ODA0NjktMS42Nzk2ODggNy44MTI1IDIuMjMwNDY5IDMuODI4MTI1IDkuOTE3OTY5IDE2LjM2MzI4MiAyMS4yOTY4NzUgMjYuNTExNzE5IDE0LjYyNSAxMy4wMzkwNjMgMjYuOTYwOTM4IDE3LjA3ODEyNSAzMC43ODkwNjMgMTguOTk2MDk0IDMuODI0MjE4IDEuOTE0MDYyIDYuMDU4NTk0IDEuNTkzNzUgOC4yOTI5NjgtLjk1NzAzMSAyLjIzMDQ2OS0yLjU1NDY4OCA5LjU3MDMxMy0xMS4xNzU3ODIgMTIuMTIxMDk0LTE1LjAwNzgxMyAyLjU1MDc4Mi0zLjgzMjAzMSA1LjEwNTQ2OS0zLjE5MTQwNiA4LjYxMzI4Mi0xLjkxNDA2MyAzLjUxMTcxOCAxLjI3MzQzOCAyMi4zMzIwMzEgMTAuNTM1MTU3IDI2LjE2MDE1NiAxMi40NDkyMTkgMy44MjgxMjUgMS45MTc5NjkgNi4zNzg5MDYgMi44NzUgNy4zMzU5MzcgNC40NzI2NTcuOTYwOTM4IDEuNTk3NjU2Ljk2MDkzOCA5LjI1NzgxMi0yLjIzMDQ2OSAxOC4xOTkyMTh6bTAgMCIgZmlsbD0iI2EyODZhZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" /></a>
+            <a href="https://www.linkedin.com/in/maria-lorena-b621331ab/" target="_blank"><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMzYzMjgxIDAtMjU2IDExNC42MzY3MTktMjU2IDI1NnMxMTQuNjM2NzE5IDI1NiAyNTYgMjU2IDI1Ni0xMTQuNjM2NzE5IDI1Ni0yNTYtMTE0LjYzNjcxOS0yNTYtMjU2LTI1NnptLTc0LjM5MDYyNSAzODdoLTYyLjM0NzY1NnYtMTg3LjU3NDIxOWg2Mi4zNDc2NTZ6bS0zMS4xNzE4NzUtMjEzLjE4NzVoLS40MDYyNWMtMjAuOTIxODc1IDAtMzQuNDUzMTI1LTE0LjQwMjM0NC0zNC40NTMxMjUtMzIuNDAyMzQ0IDAtMTguNDA2MjUgMTMuOTQ1MzEzLTMyLjQxMDE1NiAzNS4yNzM0MzctMzIuNDEwMTU2IDIxLjMyODEyNiAwIDM0LjQ1MzEyNiAxNC4wMDM5MDYgMzQuODU5Mzc2IDMyLjQxMDE1NiAwIDE4LTEzLjUzMTI1IDMyLjQwMjM0NC0zNS4yNzM0MzggMzIuNDAyMzQ0em0yNTUuOTg0Mzc1IDIxMy4xODc1aC02Mi4zMzk4NDR2LTEwMC4zNDc2NTZjMC0yNS4yMTg3NS05LjAyNzM0My00Mi40MTc5NjktMzEuNTg1OTM3LTQyLjQxNzk2OS0xNy4yMjI2NTYgMC0yNy40ODA0NjkgMTEuNjAxNTYzLTMxLjk4ODI4MiAyMi44MDA3ODEtMS42NDg0MzcgNC4wMDc4MTMtMi4wNTA3ODEgOS42MDkzNzUtMi4wNTA3ODEgMTUuMjE0ODQ0djEwNC43NWgtNjIuMzQzNzVzLjgxNjQwNy0xNjkuOTc2NTYyIDAtMTg3LjU3NDIxOWg2Mi4zNDM3NXYyNi41NTg1OTRjOC4yODUxNTctMTIuNzgxMjUgMjMuMTA5Mzc1LTMwLjk2MDkzNyA1Ni4xODc1LTMwLjk2MDkzNyA0MS4wMTk1MzEgMCA3MS43NzczNDQgMjYuODA4NTkzIDcxLjc3NzM0NCA4NC40MjE4NzR6bTAgMCIgZmlsbD0iI2EyODZhZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" /></a>
+        </center>
+
+        <p id="footerp">alacontreras15@gmail.com <br>&#169; Chía, Cundinamarca</p>
+
+
+    </footer>
+
+
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

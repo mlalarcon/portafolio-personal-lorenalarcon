@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+
+header{
+    width: 100%;
+}
+
+
+
+header .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+h3{
+    color: #343a40!important;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+h6{
+    color: #343a40!important;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: black;
+}
+
+.carousel-inner #p-carrusel{
+    color: #fff;
+}
+
+#contactame{
+    color: #343a40!important;
+    text-align: center;
+}
+
+body{
+    font-family: 'Chilanka', cursive;
+}
+
+body{
+    background: url(../img/fondo-8.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    background-position-x: center;  
+}
+
+.w-button img{
+    max-width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 20;
+}
+
+header nav .container .navbar-collapse{
+    justify-content: flex-end;
+}
+
+header nav .navbar-brand{
+    max-width: 350px;
+}
+
+
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#fff;
+}
+
+.navbar-toggler .material-icons{
+    color: #A286AF;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #A286AF;
+}
+
+#Soyyo .container h3{
+    color: #343a40!important;
+}
+
+#Soyyo #cardsoy{
+    border-radius: 20px;
+    transition: .4s;
+    background: transparent;
+}
+
+#Soyyo #cardsoy:hover{
+    transform: scale(0.9);
+}
+
+#Soyyo #cardsoy .card-img{
+    border-radius: 20px;
+}
+
+
+#Habilidades .progress{
+    margin-bottom: 25px;
+    height: 25px;
+}
+
+#Habilidades .progress #barra1{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra2{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra3{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra4{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra5{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra6{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra7{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Habilidades .progress #barra8{
+    background-color: #A286AF;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+#Experiencia .card-mb-3{
+    background: transparent;
+}
+
+#Estudios .card a img{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#Estudios #estudiostxt{
+    color: white;
+}
+
+#card-estudio{
+    background: #A286AF;
+    transition: .4s;
+}
+
+#card-estudio:hover{
+    transform: scale(0.9);
+    background: #343a40;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #A286AF;
+    border-color: #9c7dab;
+    border-radius: 20px;
+    padding-top: 9px;
+    margin-bottom: 50px;
+    transition: .4s;
+}
+
+.btn-primary:hover{
+    background-color: #343a40;
+    border-color: #292c30;
+    transform: scale(1.1);
+}
+
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #A286AF;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #9c7dab;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+
+footer{
+    background: #343a40!important;
+    padding: 20px 0;
+}
+
+footer a img{
+    max-width: 32px;
+    max-height: 32px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer #footerp{
+    color: white;
+}
+/* Fin body */
+
+/* codigo responsive tablet */
+@media screen and (max-width:990px) and (min-width:767px){
+    
+    header .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width:768px) and (min-width:320px){    
+    #carouselheader .carousel-indicators{
+        display: none;
+    }
+    #carouselheader #controless{
+        display: none;
+    }
+}
+
